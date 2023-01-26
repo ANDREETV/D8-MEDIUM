@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&display=swap');
+
+/****** GLOBALE ******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+
+/****** HEADER ******/
+
+header{
+    width: 100vw;
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 182px;
+    background-color: white;
+    z-index: 9999;
+}
+
+.header-sx{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-sx img{
+    width: 80px;
+}
+
+.header-sx h1{
+    position: relative;
+    right: 12px;
+    font-family: 'EB Garamond', serif;
+}
+
+/****** HEADER DX ******/
+
+.header-dx{
+    display: flex;
+    align-items: center;
+}
+
+.header-dx i{
+    font-size: 25px;
+    color: rgba(128, 128, 128, 0.7);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/****** HEADER INPUT ******/
+
+.header-input{
+    border-radius: 30px;
+    width: 165px;
+    height: 30px;
+    padding: 15px;
+    text-align: center;
+    border-color: rgba(128, 128, 128, 0.7);
+}
+
+::placeholder{
+    color: black;
+}
+
+/****** HEADER PROFILO UTENTE ******/
+
+.profilo-utente-header{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-left:20px ;
+}
+
+.profilo-utente-header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+
+/****** MAIN ******/
+
+main{
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.1);
+    display: flex;
+    margin-top: 50px;
+}
+
+/****** MAIN CONTAINER******/
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(128, 128, 128, 0.7);
+    width: 1250px;
+    padding: 75px 60px 20px 200px;
+}
+
+/****** MAIN BOTTOM******/
+
+.main-sx-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/****** MAIN SX TOP******/
+
+.main-sx-top{
+    display: flex;
+}
+
+/****** MAIN SX TITOLO SX ******/
+
+.main-sx_titolo-sx{
+    margin-right:30px ;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+/****** MAIN SX TITOLO DX ******/
+
+.main-sx_titolo-dx{
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+/****** MAIN SX HOVER TITOLO SX E DX ******/
+
+.main-sx-top .main-sx_titolo-sx:hover, .main-sx_titolo-dx:hover{
+    border-bottom:1px solid black ;
+    z-index: 2;
+}
+
+/****** MAIN ITEM SX ******/
+
+.main-item-sx{
+    width: 618px;
+    margin: 40px 0;
+}
+
+/****** MAIN ITEM SX TOP ******/
+
+.main-item-sx-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/****** MAIN ITEM IMG SX ******/
+
+.item-img-sx{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.item-img-sx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+/****** MAIN ITEM SX TOP P E SPAN ******/
+
+.main-item-sx-top p{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main-item-sx-top p span{
+    color:rgba(128, 128, 128, 0.7) ;
+}
+
+/****** MAIN TESTO PUNTINI P ******/
+
+.testo-puntini p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:rgba(128, 128, 128, 1);
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/****** MAIN ITEM DX ******/
+
+.main-item-dx{
+    position: relative;
+    width: 350px;
+    height: 170px;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+/****** MAIN ITEM DX IMG ******/
+
+.main-item-dx img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-position: left;
+    cursor: pointer;
+}
+
+/****** MAIN ITEM BOTTOM ******/
+
+.item-info-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/****** MAIN ITEM BOTTOM SX ******/
+
+.item-info-bottom-sx{
+    display: flex;
+    align-items: center;
+}
+
+/****** MAIN ITEM BOTTOM DX ******/
+
+.item-info-bottom-dx{
+    display: flex;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/****** MAIN ITEM BOTTOM SX SPAN ******/
+
+.item-info-bottom-sx span {
+    margin: 0 6PX;
+}
+
+/****** MAIN ITEM BOTTOM SX P ******/
+
+.item-info-bottom-sx p{
+    color: rgba(128, 128, 128, 1);
+    cursor: pointer;
+    font-size: 15px;
+    width: fit-content;
+    padding: 7px;
+}
+
+/****** MAIN INFO BOTTOM SX P HOVER ******/
+
+.item-info-bottom-sx p:hover{
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+/****** MAIN ITEM INFO BOTTOM DX I FIRST OF TYPE ******/
+
+.item-info-bottom-dx i:first-of-type{
+    margin-right: 15px;
+}
+
+/****** ICONA BOOKMARK ******/
+
+.bookmark{
+    position: relative;
+}
+
+.bookmark i:first-of-type{
+    position: absolute;
+    right: -8px;
+}
+.bookmark i:last-of-type{
+    position: absolute;
+    right: 7px;
+    color: transparent;
+}
+
+.bookmark i:last-of-type:hover{
+    color: red;
+}
+
+
+
+/****** MAIN DX ******/
+
+.main-dx{
+    width: calc(100vw - 1250px);
+    padding: 45px 100px 20px 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/****** MAIN DX TOP ******/
+
+.main-dx-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/****** MAIN DX LOGO ******/
+
+.main-dx-logo{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+/****** MAIN DX LOGO IMG ******/
+
+.main-dx-logo img{
+    width:90px;
+}
+
+/****** MAIN DX LOGO I E ION-ICON******/
+
+.main-dx-logo i, ion-icon{
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+}
+
+.main-dx-logo ion-icon{
+    color: rgba(128, 128, 128, .5);
+}
+.main-dx-logo i:last-of-type{
+    color: rgb(29, 155, 240);
+}
+
+/****** MAIN DX TOP P ******/
+
+.main-dx-top p{
+    text-align: center;
+    font-size: 18px;
+}
+
+/****** MAIN DX TOP BOTTONE-TWITTER A  ******/
+
+.main-dx-top .bottone-twitter a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0 28px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(128, 128, 128, .5);
+    border-radius: 50px;
+    padding: 10px 50px 10px 20px;
+}
+
+/****** MAIN DX TOP BOTTONE-TWITTER I ******/
+
+.bottone-twitter a i{
+    margin-right: 10px;
+    color:rgb(29, 155, 240) ;
+    font-size: 30px;
+}
+
+/****** MAIN DX TOP A  ******/
+
+.main-dx-top a{
+    color:rgba(128, 128, 128, 1);
+    font-size: 19px;
+    margin-bottom: 35px;
+} 
+
+/****** MAIN DX CENTER ******/
+
+.main-dx-center{
+    margin: 40px 0 45px;
+}
+
+.main-dx-center h3{
+    margin-bottom: 20px;
+}
+
+/****** MAIN DX TOPICS ******/
+
+.main-dx-topics{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-dx-topics p{
+    font-size: 18px;
+    width: fit-content;
+    margin: 0 15px 15px 0;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/****** MAIN DX CONTAINER ******/
+
+.main-dx-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/****** MAIN DX BOTTOM ******/
+
+.main-dx-bottom h3{
+    margin-bottom: 20px;
+}
+
+/****** MAIN DX BOX ******/
+
+.main-dx-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/****** MAIN DX BOTTOM ******/
+
+.main-dx-bottom-logo{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.main-dx-bottom-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/****** MAIN DX BOX BOTTONE ******/
+
+.main-dx-box-bottone{
+    width: fit-content;
+    border: 1px solid rgba(128, 128, 128, 0.9);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/****** MAIN DX TESTO ******/
+
+.main-dx-testo{
+    width: fit-content;
+}
+
+.main-dx-testo p:first-of-type{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/****** MAIN DX TEXT OVERFLOW 1-2 ******/
+
+.main-dx-text-overflow_1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 210px;
+}
+
+
+.main-dx-text-overflow_2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 240px;
+}
+
+/****** MAIN DX FINE ******/
+
+.main-dx-fine{
+    margin-top: 50px;
+}
+
+/****** MAIN ITEM DX TOP ******/
+
+.main-item-dx-top{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/****** MAIN ITEM DX IMG ******/
+
+.item-img-dx{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.item-img-dx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+/****** MAIN ITEM DX TOP P E SPAN******/
+
+.main-item-dx-top p{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main-item-dx-top p span{
+    color:rgba(128, 128, 128, 0.7) ;
+}
+
+.main-dx-fine_testo{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.ri-star-s-fill{
+    margin-left: 10px;
+    font-size: .7em;
+    color:rgba(128, 128, 128, .5)
+}
+
+
+.item-info-bottom_dx{
+    display: flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    align-items: center;
+}
+
+.item-info-bottom_dx span {
+    margin: 0 6PX;
+    font-size: 19px;
+    color: rgba(128, 128, 128, .5);
+}
+
+
+.item-info-bottom_dx p{
+    color: rgba(128, 128, 128, 1);
+    cursor: pointer;
+    font-size: 15px;
+    width: fit-content;
+    padding: 7px;
+    
+}
+
+.item-info-bottom_dx p:hover{
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.main-dx-fine_logo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+/****** MAIN FINE LOGO IMG ******/
+
+.main-dx-fine_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-dx-fine_container_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main-dx-fine_container_link{
+    margin: 25px 0 50px;
+}
+
+.main-dx-fine_container_link a{
+    color: green;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/****** FOOTER ******/
+
+.footer{
+    display: flex;
+    flex-wrap:wrap;
+    width: 318px;
+}
+
+.footer a{
+    margin:0 20px 20px 0;
+    color: rgba(128, 128, 128, 1);
+    text-decoration: none;
+}
+
+
+
+/****** SCROLLBAR ******/
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+} 
